@@ -11,6 +11,7 @@ import { IconDefinition } from '@ant-design/icons-angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import {NgxEchartsModule} from 'ngx-echarts';
 const antDesignIcons = AllIcons as {
   [key: string]: IconDefinition;
 };
@@ -28,7 +29,8 @@ const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesign
     NzMenuModule,
     NzIconModule.forRoot(icons),
     BrowserAnimationsModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    NgxEchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
